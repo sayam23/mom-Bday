@@ -519,37 +519,6 @@ body{
 .wall .polaroid:hover{transform:rotate(0deg) scale(1.05); z-index:5;}
 
 /* ============================================================
-   PAGE 6 — REASONS
-   ============================================================ */
-.reasons{list-style:none; padding:0; margin:14px auto 0; max-width:430px; text-align:left;}
-.reasons li{
-  position:relative; padding:11px 0 11px 44px; line-height:1.45;
-  font-family:var(--serif); font-size:1.2rem; color:var(--ink);
-  border-bottom:1px dashed rgba(242,112,95,.3);
-  opacity:0; transform:translateX(-14px);
-}
-.reasons li:last-child{border-bottom:none;}
-.page.active .reasons li{animation:reasonIn .7s var(--ease) both;}
-.page.active .reasons li:nth-child(1){animation-delay:.55s}
-.page.active .reasons li:nth-child(2){animation-delay:.75s}
-.page.active .reasons li:nth-child(3){animation-delay:.95s}
-.page.active .reasons li:nth-child(4){animation-delay:1.15s}
-.page.active .reasons li:nth-child(5){animation-delay:1.35s}
-.page.active .reasons li:nth-child(6){animation-delay:1.55s}
-@keyframes reasonIn{to{opacity:1; transform:none}}
-.reasons li::before{
-  content:"\2764"; position:absolute; left:8px; top:10px;
-  color:var(--coral); font-size:1.05rem;
-  animation:heartbeat 3s ease-in-out infinite;
-  animation-delay:calc(var(--i,0) * .4s);
-}
-.reasons li:nth-child(2)::before{--i:1}
-.reasons li:nth-child(3)::before{--i:2}
-.reasons li:nth-child(4)::before{--i:3}
-.reasons li:nth-child(5)::before{--i:4}
-.reasons li:nth-child(6)::before{--i:5}
-
-/* ============================================================
    PAGE 7 — FEATURED
    ============================================================ */
 .featured{max-width:560px; width:100%; text-align:center;}
@@ -837,7 +806,7 @@ button:focus-visible{outline:2px solid var(--teal); outline-offset:3px;}
       <p class="eyebrow reveal" style="margin:0 0 4px">my favourite</p>
       <div class="script shimmer reveal" style="font-size:clamp(2.6rem,9vw,3.8rem)">pictures of us</div>
       <div class="wall reveal">
-        <div class="polaroid"><span class="tape"></span><div class="photo"><img src="photos/hongkong.jpeg" alt=""></div><div class="cap">Hong Kong &#8212;</div></div>
+        <div class="polaroid"><span class="tape"></span><div class="photo"><img src="photos/hongkong.jpeg" alt=""></div><div class="cap">Hong Kong &#8212; the oldest one &#128518;</div></div>
         <div class="polaroid"><span class="tape gold"></span><div class="photo"><img src="photos/tenth-grad.jpeg" alt=""></div><div class="cap">when i graduated 10th</div></div>
         <div class="polaroid"><span class="tape teal"></span><div class="photo"><img src="photos/chennai.jpeg" alt=""></div><div class="cap">an old one, Chennai</div></div>
         <div class="polaroid"><span class="tape gold"></span><div class="photo"><img src="photos/australia.jpeg" alt=""></div><div class="cap">Australia &#127754;</div></div>
@@ -846,26 +815,8 @@ button:focus-visible{outline:2px solid var(--teal); outline-offset:3px;}
     </div>
   </section>
 
-  <!-- ========== PAGE 6 : REASONS ========== -->
-  <section class="page" data-page="4">
-    <div class="card reveal" style="max-width:500px">
-      <div class="frame"></div>
-      <div class="content">
-        <div class="script coral-script" style="font-size:clamp(2.4rem,8.5vw,3.2rem)">reasons i love you</div>
-        <p class="tiny" style="margin-top:4px">(a few of the endless ones)</p>
-        <ul class="reasons">
-          <li>[[ reason one ]]</li>
-          <li>[[ reason two ]]</li>
-          <li>[[ reason three ]]</li>
-          <li>[[ reason four ]]</li>
-          <li>[[ reason five ]]</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <!-- ========== PAGE 7 : JUST YOU & ME ========== -->
-  <section class="page" data-page="5">
+  <section class="page" data-page="4">
     <div class="featured">
       <div class="script shimmer reveal" style="font-size:clamp(2.8rem,10vw,4rem)">just you &amp; me</div>
       <div class="halo reveal">
@@ -880,7 +831,7 @@ button:focus-visible{outline:2px solid var(--teal); outline-offset:3px;}
   </section>
 
   <!-- ========== PAGE 8 : THE LETTER ========== -->
-  <section class="page" data-page="6">
+  <section class="page" data-page="5">
     <div class="letter">
       <div class="paper reveal">
         <h3>A letter for you, Mumma</h3>
@@ -909,7 +860,7 @@ Love you so much. Have the happiest birthday! &#10084;&#65039;</p>
   </section>
 
   <!-- ========== PAGE 9 : FINALE ========== -->
-  <section class="page" data-page="7">
+  <section class="page" data-page="6">
     <div class="closing">
       <svg class="cake-mini" viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect x="20" y="58" width="80" height="34" rx="7" fill="#f2705f"/>
